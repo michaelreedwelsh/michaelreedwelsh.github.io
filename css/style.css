@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+/*TYPE SELECTORS*********/
+
+h2 {
+    text-align: center;
+}
+
+/*CLASSES***************/
+
+.main-header {
+    background: linear-gradient(to bottom, transparent 65%, white),
+                url("../img/koh.jpg");     
+    background-size: 100% 100%;
+    text-align: center;
+    min-height: 400px;
+    margin: 0 0 50px;
+    font-weight: bold;
