@@ -3,7 +3,9 @@
 }
 
 /*TYPE SELECTORS*********/
-
+h1 {
+    font-size: 2em;
+}
 h2 {
     text-align: center;
 }
@@ -11,6 +13,7 @@ h2 {
 /*CLASSES***************/
 
 .main-header {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
     background: linear-gradient(to bottom, transparent 65%, white),
                 url("../img/koh.jpg");     
     background-size: 100% 100%;
@@ -18,3 +21,7 @@ h2 {
     min-height: 400px;
     margin: 0 0 50px;
     font-weight: bold;
+    padding-top: 45px;
+    text-shadow: 5px 8px 10px;
+    font-size: 2em;
+    
