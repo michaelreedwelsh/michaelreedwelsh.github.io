@@ -8,6 +8,7 @@ h1 {
 }
 h2 {
     text-align: center;
+    text-decoration: underline;
 }
 li {
     list-style: none;
@@ -15,13 +16,14 @@ li {
 div p {
     text-align:center;
     font-weight: bold;
+    font-size: 1.7em;
 }
 
 /*CLASSES***************/
 
 .main-header {
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    background: linear-gradient(to bottom, transparent 65%, white),
+    background: linear-gradient(to bottom, transparent 55%, white),
                 url("../img/koh.jpg");     
     background-size: 100% 100%;
     text-align: center;
@@ -32,17 +34,38 @@ div p {
     text-shadow: 5px 8px 10px;
     font-size: 2em;
 }
-
-.profile-pic {
-    max-height:275px;
-    max-width: 275px;
-    border-radius: 50% 50%;
-    border: 5px solid grey;
-
+.pics {
+    text-align: center;
 }
-div.gallery {
-    float: left;
-    margin: 4px;
-    box-shadow: inset 5px 5px 10px;
+
+.gallery {
+    max-width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3%;
+    position: relative;
+    
+}
+ /*FLOATS***********/
+ .right {
+     float: right;
+ }
+ .left {
+     float: left;
+ }
+ .center {
+     text-align: center;
+     display: inline-block;
+     margin: 0 auto;
+ }
+ 
+
+/*MEDIA QUERIES******/
+
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 1.5rem;
+        min-height: 300px;
+    }
 }
 
