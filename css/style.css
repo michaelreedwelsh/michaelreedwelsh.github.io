@@ -9,6 +9,13 @@ h1 {
 h2 {
     text-align: center;
 }
+li {
+    list-style: none;
+}
+div p {
+    text-align:center;
+    font-weight: bold;
+}
 
 /*CLASSES***************/
 
@@ -24,4 +31,18 @@ h2 {
     padding-top: 45px;
     text-shadow: 5px 8px 10px;
     font-size: 2em;
-    
+}
+
+.profile-pic {
+    max-height:275px;
+    max-width: 275px;
+    border-radius: 50% 50%;
+    border: 5px solid grey;
+
+}
+div.gallery {
+    float: left;
+    margin: 4px;
+    box-shadow: inset 5px 5px 10px;
+}
+
