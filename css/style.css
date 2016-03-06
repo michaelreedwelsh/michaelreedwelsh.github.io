@@ -29,7 +29,8 @@ footer {
 
 }
 footer p {
-    display: inline;
+    display: inline-block;
+    float: left;
     
 }
 body{
