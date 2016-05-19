@@ -1,6 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    top: 0;
+    left: 0;
 }
+
+
+
+/*Navigation bar stuffffff*/
+#menu {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#menu ul {
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    width: 80%;
+    border-radius: 5px;
+    margin: 40px auto 0;
+    
+}
+
+#menu li {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0 10px;
+    text-shadow: none;
+    color: white;
+    display: inline-block;
+    font-family: "Cinzel", serif;
+    margin: 0 auto;
+    border-radius: 5px;
+    width:25%;
+}
+a {
+    width: 100%;
+    height: 100%;
+}
+a,
+a:visited,
+a:active
+a:focus {
+ text-decoration: none;
+ color: white;
+ width: 100%;
+ height: 100%;
+}
+a:hover {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+select {
+    background-color: rgba(255,255,255, .6);
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+button {
+    font-family: Times;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
 
 /*TYPE SELECTORS*********/
 
@@ -18,24 +90,46 @@ div p {
     font-weight: bold;
     font-size: 1.7em;
 }
-footer {
-    padding-top: 5px;
-    display: inline-block;
-    background: rgb(20, 20, 20);
-    color: white;
-    width: 100%;
-    max-height: 50px;
-    bottom: 0;
-
-}
-footer p {
-    display: inline-block;
-    float: left;
-    
-}
 body{
     text-align: center;
 }
+
+/*FOOOOOOOOTER STUFFFFFF*/
+footer {
+    margin-top: 100px;
+  text-align: center;
+  clear: both;
+  background-color: black;
+  color: white;
+  height: 100px;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+    -webkit-box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+    box-shadow: 0 -20px 20px -20px rgba(0,0,0,0.8);
+}
+
+footer .social_media {
+    margin: 0 auto;
+    display: block;
+}
+
+footer p {
+    padding-top: 15px;
+    text-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+  
+}
+footer .social {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+
 /*THE ONLY ID*************/
 #suntag img {
     height: 40px;
@@ -47,7 +141,6 @@ body{
     background: none;
     border-radius: 50%;
 }
-
 
 
 
@@ -79,12 +172,7 @@ body{
     position: relative;
     
 }
-.social {
-    width: 40px;
-    height: 30px;
-    float: right;
-    padding: 0px 5px;
-}
+
 .main {
     border-top: 1px solid grey;
     margin: 0 auto;
@@ -100,30 +188,30 @@ body{
     box-shadow:0 3px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     margin-top: 0;
     height: 400px;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 10px;
     line-height: 2em;
     color: black;
-    text-shadow: 0px 0px 8px #fff;
 }
 .goals p,
 .status p {
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size:1.7rem;
 }
 .status {
-    background-image: url("../img/space.jpg");
-    background-size: 100% 100%;
+    background-color: rgb(200,200,200);
 }
 .goals {
-    background-image: url("../img/sunset.jpg");
-    background-size: 100% 100%;
+    background-color: rgb(200,200,200);
     
 }
 
 
 /*MEDIA QUERIES******/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .main-header {
         font-size: 1.5rem;
         min-height: 300px;
@@ -134,6 +222,19 @@ body{
         width: 90%;
         height: 420px;
         font-size: 1.3rem;
+    }
+    #menu {
+        margin: -40px auto 0;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+        width: 85%;
+    }
+    li {
+        padding: 0;
+        text-align: center;
+        margin: 0 10px;
     }
 }
 @media (max-width:398px) {
@@ -167,9 +268,18 @@ body{
         font-size: 1.1rem;
     }
 }
-    
 
+@media (min-width: 320px) and (max-width:568px) {
+    #menu ul {
+        display: none;
+    }
+}
 
+@media(min-width: 568px) {
+    #menu select {
+        display: none;
+    }
+}
 /*CLEARFIX******/
 
 .clearfix:after {
