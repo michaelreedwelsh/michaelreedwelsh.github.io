@@ -39,7 +39,13 @@ $dropdown.change(function() {
   
 }); 
   
+$(".pics").slick({
+  arrow: false,
+  dots: true,
+  autoplay: true,
+  mobileFirst: true
 
+});
 
 //modify css to hide links on small size and show button and select
   //also hides the select on larger screens
