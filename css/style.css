@@ -190,7 +190,7 @@ footer .social {
     overflow: hidden;
     border-radius: 10px;
     line-height: 2em;
-    color: black;
+    color: white;
 }
 .goals p,
 .status p {
@@ -200,10 +200,10 @@ footer .social {
     font-size:1.7rem;
 }
 .status {
-    background-color: rgb(235,235,235);
+    background: linear-gradient(to bottom right, #3366ff, #99b3ff);
 }
 .goals {
-    background-color: rgb(235,235,235);
+    background: linear-gradient(to bottom right, #3366ff, #99b3ff);
     
 }
 
